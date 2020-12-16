@@ -65,4 +65,8 @@ for (i = 0; i < lowerCaseArray.length; i++) {
 };
 // searching uman position ,array index + 1, for input inside lowerCaseArray
 var umanPosition = lowerCaseArray.indexOf(input) + 1;
-console.log(umanPosition);
+// console.log(umanPosition);
+var inputPosition = document.getElementById('input-position');
+inputPosition.innerHTML += '<span>' +
+'L\'elemento aggiunto si trova nella posizione: ' +
+umanPosition + '</span>';
