@@ -11,7 +11,7 @@ var stringArray = [
   'Rosa',
 ];
 
-// // works with uppercase first character and strings - no numbers
+// // sort() works with uppercase first character and strings - no numbers
 // var input = prompt('Inserisci qualcosa');
 // console.log(array);
 // if (input) {
@@ -46,8 +46,7 @@ var stringArray = [
 // lowerCaseArray.sort();
 // console.log(lowerCaseArray);
 
-//tring to capitalize firt character of each array alement
-
+//tring to capitalize firt character of each array alement - done with CSS
 var i = 0;
 var lowerCaseArray = [];
 var input = prompt('Inserisci qualcosa');
@@ -55,13 +54,15 @@ stringArray.push(input);
 while (i < stringArray.length) {
   lowerCaseArray.push(stringArray[i].toLowerCase());
   i++;
-}
+};
 //sort lowerCaseArray array
 lowerCaseArray.sort();
-console.log(lowerCaseArray);
+// console.log(lowerCaseArray);
 // put inside array-list ul each array alement inside list items
 var listaOutput = document.getElementById('array-list');
 for (i = 0; i < lowerCaseArray.length; i++) {
   listaOutput.innerHTML += '<li>' + lowerCaseArray[i] + '</li>'
-}
-// console.log(i);
+};
+// searching uman position ,array index + 1, for input inside lowerCaseArray
+var umanPosition = lowerCaseArray.indexOf(input) + 1;
+console.log(umanPosition);

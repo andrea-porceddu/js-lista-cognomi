@@ -24,5 +24,11 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-transform: capitalize; /* capitalize first character inside */
+  text-transform: capitalize; /* capitalize first character inside ul */
+}
+
+.uman-position {
+  height: 30px;
+  width: 30px;
+  background-color: #ecdb54;
 }
