@@ -11,7 +11,7 @@ var stringArray = [
   'Rosa',
 ];
 
-// works with uppercase first character and strings - no numbers
+// // works with uppercase first character and strings - no numbers
 // var input = prompt('Inserisci qualcosa');
 // console.log(array);
 // if (input) {
@@ -20,14 +20,30 @@ var stringArray = [
 // }
 // console.log(stringArray);
 
-// lowercase first character - toUpperCase()/toLowerCase() methods does not change the original string
-// trying to put each stringArray elements, and transform it to lowercase, inside another Array and after sort() it
-var input = prompt('Inserisci qualcosa');
-stringArray.push(input);
-// stringArray lowercase transform
-var lowerCaseArray = [];
-for (i = 0; i < stringArray.length; i++) {
-  lowerCaseArray.push(stringArray[i].toLowerCase());
-};
-lowerCaseArray.sort();
-console.log(lowerCaseArray);
+// // lowercase first character - toUpperCase()/toLowerCase() methods does not change the original string
+// // trying to put each stringArray element, and transform it to lowercase, inside another Array. After sort() it
+// var input = prompt('Inserisci qualcosa');
+// if (input) {
+//   stringArray.push(input);
+// }
+// // stringArray lowercase transform
+// var lowerCaseArray = [];
+// for (i = 0; i < stringArray.length; i++) {
+//   lowerCaseArray.push(stringArray[i].toLowerCase());
+// };
+// lowerCaseArray.sort();
+// console.log(lowerCaseArray);
+
+// while variant
+// var i = 0;
+// var lowerCaseArray = [];
+// var input = prompt('Inserisci qualcosa');
+// stringArray.push(input);
+// while (i < stringArray.length) {
+//   lowerCaseArray.push(stringArray[i].toLowerCase());
+//   i++;
+// }
+// lowerCaseArray.sort();
+// console.log(lowerCaseArray);
+
+//tring to capitalize firt character of each array alement
