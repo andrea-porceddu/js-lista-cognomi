@@ -34,7 +34,7 @@ var stringArray = [
 // lowerCaseArray.sort();
 // console.log(lowerCaseArray);
 
-// while variant
+// // while variant
 // var i = 0;
 // var lowerCaseArray = [];
 // var input = prompt('Inserisci qualcosa');
@@ -47,3 +47,21 @@ var stringArray = [
 // console.log(lowerCaseArray);
 
 //tring to capitalize firt character of each array alement
+
+var i = 0;
+var lowerCaseArray = [];
+var input = prompt('Inserisci qualcosa');
+stringArray.push(input);
+while (i < stringArray.length) {
+  lowerCaseArray.push(stringArray[i].toLowerCase());
+  i++;
+}
+//sort lowerCaseArray array
+lowerCaseArray.sort();
+console.log(lowerCaseArray);
+// put inside array-list ul each array alement inside list items
+var listaOutput = document.getElementById('array-list');
+for (i = 0; i < lowerCaseArray.length; i++) {
+  listaOutput.innerHTML += '<li>' + lowerCaseArray[i] + '</li>'
+}
+// console.log(i);
